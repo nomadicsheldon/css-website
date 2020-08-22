@@ -1,0 +1,149 @@
+a {
+  color: #11999e;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+body {
+  margin: 0;
+  /* text align will center all element which doesn't specify width, if width is applied in the element then
+  you have to set it using auto margin like this - 👉 margin: 0 auto 0 auto; */
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  /* font-family: "Helvetica Neue",verdana, sans-serif; 👈 stacking of fonts*/
+}
+
+h1 {
+  /* font-size: 90px; static font*/
+  /* dynamic font -
+👉 By default- 100% = 16px;
+so 90px = (90/16)*100 = 562.5
+
+👉 16px = 100% = 1em
+so 90px = 5.625em
+em and % is effected by inherited font type so in css3 we have an option "rem", it will not be effected by previously implemented
+font.
+*/
+  color: #66bfbf;
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  /* line-height: 2; */
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: 'Montserrat', sans-serif;
+  /* 40px- (40/16) = 2.5rem*/
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999e;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border-style: dotted;
+  border-width: 6px;
+  border-color: #eaf6f6;
+  border-bottom: none;
+  width: 4%;
+}
+
+p {
+  color: #40514e;
+  font-weight: bolder;
+  line-height: 2;
+}
+
+/************************************Class selectors************************************/
+.bottom-container {
+  background-color: #66bfbf;
+  height: 200px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.btn {
+  display: block;
+  margin-bottom: 100px;
+}
+
+/* float gives the freedom to float in one side, if we specify to left element will float to left*/
+.mobile-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* float gives the freedom to float in one side, if we specify to right element will float to right*/
+.computer-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me {
+  margin: auto;
+  width: 40%;
+}
+
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 50px;
+}
+
+.footer-p {
+  color: white;
+}
+
+/* clear makes sure that left margin is clear and not wrapped around anything.
+ .mobile-img-description {
+  clear: left;
+}
+
+.computer-img-description {
+  clear: right;
+} */
+.middle-container {}
+
+.my-info {
+  width: 30%;
+  margin: 50px auto 50px auto;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.profile {
+  margin-top: 100px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
